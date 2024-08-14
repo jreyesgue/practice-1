@@ -13,7 +13,7 @@
                 switch (GetOption())
                 {
                     case 1:
-                        // TODO: Implement BMI Functionality
+                        BMI.Start();
                         break;
                     case 2:
                         // TODO: Implement Books Functionality
