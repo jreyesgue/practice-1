@@ -1,5 +1,6 @@
 ﻿using Practice1.Bank;
 using Practice1.Books;
+using Practice1.School;
 
 namespace Practice1
 {
@@ -27,7 +28,7 @@ namespace Practice1
                         atm.Start();
                         break;
                     case 4:
-                        // TODO: Implement Students Functionality
+                        Grades.Start();
                         break;
                     case 5:
                         // TODO: Implement Dates Functionality
@@ -62,7 +63,7 @@ namespace Practice1
             Console.WriteLine("1. Calculate BMI.");
             Console.WriteLine("2. Library.");
             Console.WriteLine("3. ATM.");
-            Console.WriteLine("4. Arrays and Lists.");
+            Console.WriteLine("4. Student Grades.");
             Console.WriteLine("5. Working with Dates.");
             Console.WriteLine("6. Working with Text.");
             Console.WriteLine("7. Working with Files.");
