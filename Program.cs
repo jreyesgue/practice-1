@@ -1,4 +1,6 @@
-﻿namespace Practice1
+﻿using Practice1.Books;
+
+namespace Practice1
 {
     internal class Program
     {
@@ -16,7 +18,8 @@
                         BMI.Start();
                         break;
                     case 2:
-                        // TODO: Implement Books Functionality
+                        var library = new Library();
+                        library.Start();
                         break;
                     case 3:
                         // TODO: Implement ATM Functionality
@@ -38,7 +41,7 @@
                         finish = true;
                         break;
                     default:
-                        Console.WriteLine("\nInvalid option. Try Again.");
+                        Console.WriteLine("\nInvalid option. Try Again.\n");
                         break;
                 }
             } while (!finish);
@@ -54,8 +57,8 @@
         private static void DisplayMenu()
         {
             Console.WriteLine("---------- Menu ----------\n");
-            Console.WriteLine("1. Primitive Types and Expressions.");
-            Console.WriteLine("2. Non-Primitive Types.");
+            Console.WriteLine("1. Calculate BMI.");
+            Console.WriteLine("2. Library.");
             Console.WriteLine("3. Control Flow.");
             Console.WriteLine("4. Arrays and Lists.");
             Console.WriteLine("5. Working with Dates.");
