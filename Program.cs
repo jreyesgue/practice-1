@@ -1,4 +1,5 @@
-﻿using Practice1.Books;
+﻿using Practice1.Bank;
+using Practice1.Books;
 
 namespace Practice1
 {
@@ -22,7 +23,8 @@ namespace Practice1
                         library.Start();
                         break;
                     case 3:
-                        // TODO: Implement ATM Functionality
+                        var atm = new ATM(100);
+                        atm.Start();
                         break;
                     case 4:
                         // TODO: Implement Students Functionality
@@ -59,7 +61,7 @@ namespace Practice1
             Console.WriteLine("---------- Menu ----------\n");
             Console.WriteLine("1. Calculate BMI.");
             Console.WriteLine("2. Library.");
-            Console.WriteLine("3. Control Flow.");
+            Console.WriteLine("3. ATM.");
             Console.WriteLine("4. Arrays and Lists.");
             Console.WriteLine("5. Working with Dates.");
             Console.WriteLine("6. Working with Text.");
