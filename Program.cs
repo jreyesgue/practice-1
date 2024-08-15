@@ -1,6 +1,7 @@
 ﻿using Practice1.Bank;
 using Practice1.Books;
 using Practice1.School;
+using Practice1.Time;
 
 namespace Practice1
 {
@@ -31,7 +32,7 @@ namespace Practice1
                         Grades.Start();
                         break;
                     case 5:
-                        // TODO: Implement Dates Functionality
+                        Dates.Start();
                         break;
                     case 6:
                         // TODO: Implement Texts Functionality
@@ -64,7 +65,7 @@ namespace Practice1
             Console.WriteLine("2. Library.");
             Console.WriteLine("3. ATM.");
             Console.WriteLine("4. Student Grades.");
-            Console.WriteLine("5. Working with Dates.");
+            Console.WriteLine("5. Compare Dates.");
             Console.WriteLine("6. Working with Text.");
             Console.WriteLine("7. Working with Files.");
             Console.WriteLine("8. Exit.");
