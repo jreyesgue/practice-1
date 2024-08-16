@@ -1,8 +1,10 @@
 ﻿using Practice1.Bank;
 using Practice1.Books;
+using Practice1.Files;
 using Practice1.School;
 using Practice1.Text;
 using Practice1.Time;
+using Practice1.Weight;
 
 namespace Practice1
 {
@@ -39,7 +41,7 @@ namespace Practice1
                         TextProcessor.Start();
                         break;
                     case 7:
-                        // TODO: Implement Files Functionality
+                        FileProcessor.Start();
                         break;
                     case 8:
                         Console.WriteLine("\nGoodbye :)");
@@ -68,7 +70,7 @@ namespace Practice1
             Console.WriteLine("4. Student Grades.");
             Console.WriteLine("5. Compare Dates.");
             Console.WriteLine("6. Analyze Text.");
-            Console.WriteLine("7. Working with Files.");
+            Console.WriteLine("7. Sort File.");
             Console.WriteLine("8. Exit.");
         }
     }
